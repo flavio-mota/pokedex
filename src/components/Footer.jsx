@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer>
-      <p>Desenvolvido por Flávio Mota — Programação Frontend — UNIVÁS</p>
+    <footer className="site-footer">
+      <p>Desenvolvido por Flávio Mota — Programação Frontend — UNIVAS</p>
     </footer>
   )
 }

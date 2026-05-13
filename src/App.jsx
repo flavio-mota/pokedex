@@ -5,10 +5,14 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Navbar />
-      <PokemonList />
+    <div className="app">
+      <div className="site-shell">
+        <Header />
+        <Navbar />
+      </div>
+      <main className="app-main">
+        <PokemonList />
+      </main>
       <Footer />
     </div>
   )
