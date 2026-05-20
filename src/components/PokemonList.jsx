@@ -1,29 +1,6 @@
 import { useState } from 'react'
 import PokemonCard from './PokemonCard'
-
-const POKEMONS = [
-  {
-    id: 25,
-    name: 'Pikachu',
-    type: 'Elétrico',
-    imageUrl:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png',
-  },
-  {
-    id: 1,
-    name: 'Bulbasaur',
-    type: 'Grama / Veneno',
-    imageUrl:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
-  },
-  {
-    id: 4,
-    name: 'Charmander',
-    type: 'Fogo',
-    imageUrl:
-      'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png',
-  },
-]
+import {POKEMONS} from '../data/pokemon'
 
 function PokemonList() {
   const [pokemons] = useState(POKEMONS)
@@ -41,7 +18,7 @@ function PokemonList() {
     >
       <div className="pokemon-catalog__head">
         <h2 id="catalogo-titulo" className="pokemon-catalog__title">
-          Catálogo
+          Pokémon
         </h2>
         <div className="pokemon-toolbar">
           <label htmlFor="busca">Buscar por nome</label>
